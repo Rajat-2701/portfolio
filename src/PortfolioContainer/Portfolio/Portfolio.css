@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto:wght@400;500;700&family=Satisfy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@400;500;700&family=Satisfy&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@400;500;700&family=Satisfy&family=Ubuntu:wght@300;400;500;700&display=swap');
+#portfolio {
+  padding: 60px 0;
+  font-family: 'Ubuntu',sans-serif;
+}
+.portfolio-container{
+  position: relative;
+}
+#portfolio .portfolio-title {
+  position: relative;
+  padding: 30px 0;
+  text-align: center;
+}
+span.portfolio {
+  position: absolute;
+  top: 30px;
+  color: #eef0f2;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.portfolio-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #3b434a;
+  position: relative;
+  z-index: 2;
+}
+.portfolio-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  color: #444444 !important;
+}
+#tablist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul.nav.nav-pills.tablist{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+}
+ul.nav.nav-pills.tablist li{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #fff;
+}
+ul.nav.nav-pills.tablist li a{
+    color: #f3a200 !important;
+    border: 2px solid;
+    background-color: #fff;
+    border-color: #ffb727;
+    border-radius: 7px !important;
+}
+ul.nav.nav-pills.tablist li a.active{
+    padding: 0rem 1.5rem !important;
+    color: #fff !important;
+    background-color: #f3a200 !important;
+    border-color: #f3a200 !important;
+    border-radius: 7px !important;
+}
+.portfolio-data{
+  position: relative;
+}
+.portfolio-content{
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 60%;
+  padding: 10px 15px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.portfolio-data:hover .portfolio-content{
+  opacity: 1;
+}
+.portfolio-content h4{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-family: 'Raleway',sans-serif;
+}
+.portfolio-content p{  
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-bottom: 0;
+}
